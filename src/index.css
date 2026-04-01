@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #08d665;
+  --color-secondary: #000;
+  --color-dark: #16171d;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a] text-gray-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white font-bold;
+  }
+}
+
+/* Custom animations for Hero Image */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

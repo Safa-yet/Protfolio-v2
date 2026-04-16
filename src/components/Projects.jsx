@@ -13,7 +13,7 @@ import p3 from "../assets/bricknet_thumnail.png";
 import p4 from "../assets/app.png";
 import p5 from "../assets/english-janala.png";
 import p6 from "../assets/sundarban.png";
-import p7 from "../assets/keenkepper.png";
+import p7 from "../assets/Keenkepper.png";
 import p8 from "../assets/github.png";
 
 const Projects = ({isDark}) => {

@@ -34,3 +34,82 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+
+
+/* ===== MARQUEE ANIMATION ===== */
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  gap: 14px;
+}
+
+.marquee-row {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+/* Direction control */
+.scroll-right {
+  animation: scrollRight 40s linear infinite;
+}
+
+.scroll-left {
+  animation: scrollLeft 40s linear infinite;
+}
+
+/* ===== SIDE FADE EFFECT ===== */
+
+.marquee-row::before,
+.marquee-row::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 140px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.marquee-row::before {
+  left: 0;
+  background: linear-gradient(to right, #0b0b0c, transparent);
+}
+
+.marquee-row::after {
+  right: 0;
+  background: linear-gradient(to left, #0b0b0c, transparent);
+}
+
+
+
+.swiper-slide {
+  transition: transform 0.5s ease;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  filter: blur(2px);
+  opacity: 0.5;
+  transform: scale(0.9);
+}

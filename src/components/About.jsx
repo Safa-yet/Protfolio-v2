@@ -7,7 +7,7 @@ import resume from "/public/Safayet_Resume_Updated.pdf"
 
 const About = ({ isDark }) => {
   const stats = [
-    { label: 'Experience', value: '3+', icon: <Award className="text-primary" /> },
+    { label: 'Experience', value: '2+', icon: <Award className="text-primary" /> },
     { label: 'Projects', value: '50+', icon: <Star className="text-primary" /> },
     { label: 'Clients', value: '15+', icon: <User className="text-primary" /> },
     { label: 'Coffee', value: '1k+', icon: <Coffee className="text-primary" /> },
@@ -35,7 +35,7 @@ const About = ({ isDark }) => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary p-8 rounded-3xl z-20 hidden md:block shadow-2xl">
-               <h2 className="text-5xl font-black text-black mb-1 leading-none">03+</h2>
+               <h2 className="text-5xl font-black text-black mb-1 leading-none">02+</h2>
                <p className="text-[10px] uppercase font-bold tracking-[0.3em] text-black opacity-60">Years of <br /> Excellence</p>
             </div>
           </motion.div>
@@ -52,7 +52,11 @@ const About = ({ isDark }) => {
             
             <div className={`p-8 rounded-r-3xl mb-10 border-l-4 border-primary shadow-sm ${isDark ? 'bg-white/5' : 'bg-white'}`}>
                <h3 className={`text-xl font-bold mb-4 uppercase italic tracking-widest ${isDark ? 'text-white' : 'text-gray-800'}`}>"Web development is an art of solving problems with code."</h3>
-               <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} text-lg leading-relaxed`}>I am a highly motivated professional with over 3 years of experience in the web development industry specializing in modern frontend frameworks like React and Next.js.</p>
+               <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} text-lg leading-relaxed`}>I’m Safayet Ul Islam, a results-driven Frontend Developer specializing in React, Next.js, and modern UI development. I build fast, scalable, and user-focused web applications with clean design and efficient performance.
+
+Currently, I’m advancing my skills in full-stack development while also working with WordPress, Elementor, WooCommerce, and SEO to deliver complete web solutions.
+
+My goal is to create impactful digital experiences that combine performance, usability, and modern design.</p>
             </div>
 
             <div className="grid grid-cols-2 gap-8 mb-12">

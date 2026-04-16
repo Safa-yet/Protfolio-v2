@@ -21,11 +21,12 @@ const Hero = ({ isDark }) => {
               I'm <span className="text-primary italic">Safayet</span>
             </h1>
             <h2 className={`text-2xl lg:text-4xl font-black uppercase mb-8 tracking-[0.2em] ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-              Professional Web Developer
+             Frontend Developer | React & Next.js
             </h2>
             <div className="relative mb-10 group">
                 <p className={`text-lg border-l-4 border-primary pl-8 max-w-xl italic leading-relaxed py-2 backdrop-blur-md rounded-r-lg ${isDark ? 'text-white/80 bg-black/40' : 'text-gray-700 bg-black/5'}`}>
-                  I am a professional web developer with over 3 years of experience in creating stunning and user-friendly websites. I specialize in responsive design, ensuring that your website looks great on all devices.
+                  Crafting high-performance web applications with React & Next.js.
+Focused on clean design and seamless user experience.
                 </p>
                 <div className="absolute -left-1 top-0 w-1 h-full bg-primary" />
             </div>

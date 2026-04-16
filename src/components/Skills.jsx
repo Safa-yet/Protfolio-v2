@@ -1,53 +1,116 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FileCode, Terminal, Github, Box, Cpu, Layers, Palette, Wind, Globe, Code2, Figma } from 'lucide-react';
+import React from "react";
+import {
+  SiHtml5,
+  SiJavascript,
+  SiReact,
+  SiTailwindcss,
+  SiBootstrap,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiWoocommerce,
+  SiWordpress,
+  SiNodedotjs,
+  SiDaisyui,
+  SiReactrouter,
+  SiNextdotjs,
+  SiWebpack,
+  SiNetlify,
+  SiVite,
+  SiVercel,
+  SiCss,
+} from "react-icons/si";
+import { TbSeo } from "react-icons/tb";
+import { FaSearch, FaServer, FaTools } from "react-icons/fa";
 
 const Skills = ({ isDark }) => {
   const skills = [
-    { name: 'HTML5', icon: <Code2 className="text-orange-500" />, level: '95%' },
-    { name: 'CSS3', icon: <Globe className="text-blue-500" />, level: '90%' },
-    { name: 'JavaScript', icon: <Cpu className="text-yellow-500" />, level: '92%' },
-    { name: 'React', icon: <Box className="text-cyan-400" />, level: '95%' },
-    { name: 'Tailwind', icon: <Wind className="text-sky-400" />, level: '98%' },
-    { name: 'Bootstrap', icon: <Layers className="text-purple-500" />, level: '85%' },
-    { name: 'Git', icon: <Terminal className="text-red-500" />, level: '88%' },
-    { name: 'GitHub', icon: <Github className={isDark ? 'text-white' : 'text-black'} />, level: '90%' },
-    { name: 'Figma', icon: <Figma className="text-pink-500" />, level: '80%' },
+    { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
+    { name: "CSS3", icon: SiCss, color: "#1572B6" },
+    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    { name: "React", icon: SiReact, color: "#61DAFB" },
+    { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
+    { name: "React Router", icon: SiReactrouter, color: "#CA4245" },
+    { name: "Tailwind", icon: SiTailwindcss, color: "#38BDF8" },
+    { name: "DaisyUI", icon: SiDaisyui, color: "#5A0EF8" },
+    { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
+    { name: "Node.js", icon: SiNodedotjs, color: "#68A063" },
+    { name: "WordPress", icon: SiWordpress, color: "#21759B" },
+    { name: "WooCommerce", icon: SiWoocommerce, color: "#96588A" },
+    { name: "Elementor", icon: FaSearch, color: "#92003B" },
+    { name: "Git", icon: SiGit, color: "#F05032" },
+    { name: "GitHub", icon: SiGithub, color: "#ffffff" },
+    { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+    { name: "SEO", icon: TbSeo, color: "#00C853" },
+    { name: "Vercel", icon: SiVercel, color: "#ffffff" },
+    { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
+    { name: "Vite", icon: SiVite, color: "#646CFF" },
+    { name: "Postman", icon: FaServer, color: "#FF6C37" },
+    { name: "VS Code", icon: FaTools, color: "#0078d7" },
+    { name: "DevTools", icon: FaTools, color: "#4285F4" },
+    { name: "API Routes", icon: FaServer, color: "#4ade80" },
+    { name: "UI/UX", icon: SiFigma, color: "#ff6b6b" },
+    { name: "Performance", icon: FaTools, color: "#22c55e" },
   ];
 
+  const row1 = skills.slice(0, 9);
+  const row2 = skills.slice(9, 18);
+  const row3 = skills.slice(18);
+
+  const renderRow = (data, direction) => (
+    <div className="marquee-row">
+      <div className={`marquee ${direction}`}>
+        {[...data, ...data].map((skill, i) => {
+          const Icon = skill.icon;
+
+          return (
+            <div
+              key={i}
+              className="flex flex-col items-center justify-center py-3 px-6 rounded-2xl "
+            >
+              <div
+                className="w-12 h-12 flex items-center justify-center rounded-lg mb-3"
+                style={{ background: `${skill.color}15` }}
+              >
+                <Icon size={24} style={{ color: skill.color }} />
+              </div>
+
+              <p
+                className={`text-xs font-medium ${
+                  isDark ? "text-white" : "text-gray-800"
+                }`}
+              >
+                {skill.name}
+              </p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+
   return (
-    <section id="skills" className={`py-32 relative overflow-hidden transition-colors duration-700 ${isDark ? 'bg-[#050505]' : 'bg-[#fcf8ed]'}`}>
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center mb-24">
+    <section
+      className={`py-32 ${
+        isDark ? "bg-[#0b0b0c]" : "bg-[#fafafa]"
+      } overflow-hidden`}
+    >
+      <div className="max-w-6xl mx-auto px-6">
+
+      <div className=" text-center mb-24">
           <span className="text-primary font-bold uppercase tracking-[0.5em] text-xs mb-4">Capabilities</span>
           <h1 className={`text-6xl md:text-8xl font-black text-center uppercase leading-none ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>
             My <span className="text-gray-400 italic">Skills</span>
           </h1>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05, borderColor: '#08d665' }}
-              className={`p-8 rounded-[32px] border transition-all duration-300 flex flex-col items-center gap-6 group cursor-default shadow-xl ${isDark ? 'bg-white/[0.02] border-white/5' : 'bg-white border-[#f0ecd8]'}`}
-            >
-              <div className={`w-16 h-16 rounded-2xl flex items-center justify-center transition-colors shadow-inner ${isDark ? 'bg-white/5 group-hover:bg-primary/10' : 'bg-[#fdfbf6] group-hover:bg-primary/10 border border-[#f0ecd8]'}`}>
-                {React.cloneElement(skill.icon, { size: 32 })}
-              </div>
-              <div className="text-center w-full">
-                <h3 className={`font-bold uppercase tracking-widest text-sm mb-2 ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>{skill.name}</h3>
-                <div className={`w-full h-1 rounded-full overflow-hidden mt-2 ${isDark ? 'bg-white/5' : 'bg-gray-200'}`}>
-                   <motion.div initial={{ width: 0 }} whileInView={{ width: skill.level }} transition={{ duration: 1.5 }} className="h-full bg-primary" />
-                </div>
-              </div>
-            </motion.div>
-          ))}
-          <div className={`mx-auto col-span-5 p-8 rounded-[32px] border flex flex-col justify-center items-center text-center ${isDark ? 'bg-primary/5 border-primary/20' : 'bg-primary/5 border-primary/20 shadow-md'}`}>
-             <h2 className={`text-2xl font-black uppercase mb-2 ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>Want to build something?</h2>
-             <a href="#contact" className="bg-primary text-black px-10 py-4 rounded-2xl font-bold uppercase hover:bg-gray-900 hover:text-white transition-all transform hover:scale-105 shadow-lg shadow-primary/20">Contact Me</a>
-          </div>
-        </div>
+        {/* 3 MARQUEE ROWS */}
+        {renderRow(row1, "scroll-right")}
+        {renderRow(row2, "scroll-left")}
+        {renderRow(row3, "scroll-right")}
+
+        <div className="flex justify-center mt-24"> <a href="#contact" className="px-12 py-3 rounded-full font-medium bg-black text-white hover:opacity-80 transition" > Let’s Work Together </a> </div>
+
       </div>
     </section>
   );

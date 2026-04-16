@@ -92,7 +92,7 @@ const Projects = ({isDark}) => {
   >
     <div className="flex justify-between items-start mb-4">
       
-      {/* TEXT */}
+      {/* TEX */}
       <div>
         <h4 className={`text-[10px] font-bold uppercase tracking-widest transition-colors
         ${isDark ? 'text-gray-400 group-hover:text-black' : 'text-gray-500 group-hover:text-black'}`}>

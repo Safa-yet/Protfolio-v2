@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Facebook, Twitter, Linkedin, Instagram, ChevronsRight, Search, Menu as MenuIcon, X as XIcon, Moon, Coffee, ArrowLeft, ArrowRight, Sun, ExternalLink, Mail, Phone, Github } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../assets/img/s-favicon.png';
+import logo from '../assets/safayet-logo-removebg-preview.png';
 import msgIcon from '../assets/img/msg-icon.svg';
 import hamburger from '../assets/img/hamburger.svg';
 import profileImg from '../assets/img/safayet-formal-pic.png';
@@ -93,8 +93,8 @@ const Navbar = ({ isDark, theme, toggleTheme ,links}) => {
       {/* Main Navbar */}
       <nav className={`transition-all duration-300 ${scrolled ? (isDark ? 'bg-black/95 backdrop-blur-md border-b border-white/10 py-3' : 'bg-[#fdfbf6]/95 backdrop-blur-md border-b border-gray-200 py-3 text-black') : (isDark ? 'bg-black py-4 border-b border-white/10' : 'bg-transparent py-4 border-b border-gray-200/50 text-black')}`}>
         <div className="container mx-auto px-6 flex justify-between items-center font-bold tracking-[0.2em] text-[10px] uppercase">
-          <a href="#home" className="text-3xl font-bold">
-            𝒮𝒶𝒻𝒶<span className='text-primary'>𝓎𝑒𝓉</span>
+          <a href="#home" >
+            <img src={logo} alt="Logo"  className='w-23 object-cover '/>
           </a>
 
           {/* Desktop Menu */}
@@ -177,7 +177,7 @@ const Navbar = ({ isDark, theme, toggleTheme ,links}) => {
 
               <div className="p-8 md:p-12 relative z-10 flex flex-col h-full">
                 <div className="flex justify-between items-center mb-16">
-                  <img src={logo} alt="" className="w-10 h-10" />
+                  <img src={logo} alt="" className="w-20" />
                   <button
                     className={`w-12 h-12 rounded-full flex items-center justify-center transition-all ${isDark ? 'bg-white/5 hover:bg-white/10' : 'bg-black/5 hover:bg-black/10'}`}
                     onClick={() => setIsOpen(false)}

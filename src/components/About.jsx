@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import aboutImg from '../assets/img/Midnight_prblmm solve.jpeg';
+import aboutImg from '../assets/Gemini_Generated_Image_4zp41q4zp41q4zp4.png';
 import { Download, User, Coffee, Award, Star } from 'lucide-react';
 import resume from "/public/Safayet_Resume_Updated.pdf"
 
@@ -8,7 +8,7 @@ import resume from "/public/Safayet_Resume_Updated.pdf"
 const About = ({ isDark }) => {
   const stats = [
     { label: 'Experience', value: '2+', icon: <Award className="text-primary" /> },
-    { label: 'Projects', value: '50+', icon: <Star className="text-primary" /> },
+    { label: 'Projects', value: '70+', icon: <Star className="text-primary" /> },
     { label: 'Clients', value: '15+', icon: <User className="text-primary" /> },
     { label: 'Coffee', value: '1k+', icon: <Coffee className="text-primary" /> },
   ];

@@ -94,7 +94,7 @@ const Navbar = ({ isDark, theme, toggleTheme ,links}) => {
       <nav className={`transition-all duration-300 ${scrolled ? (isDark ? 'bg-black/95 backdrop-blur-md border-b border-white/10 py-3' : 'bg-[#fdfbf6]/95 backdrop-blur-md border-b border-gray-200 py-3 text-black') : (isDark ? 'bg-black py-4 border-b border-white/10' : 'bg-transparent py-4 border-b border-gray-200/50 text-black')}`}>
         <div className="container mx-auto px-6 flex justify-between items-center font-bold tracking-[0.2em] text-[10px] uppercase">
           <a href="#home" >
-            <img src={logo} alt="Logo"  className='w-23 object-cover '/>
+              <h1 className='text-2xl italic capitalize font-sans'>Safayet<span className='text-[#08d665]'>dev</span></h1>
           </a>
 
           {/* Desktop Menu */}
@@ -177,7 +177,7 @@ const Navbar = ({ isDark, theme, toggleTheme ,links}) => {
 
               <div className="p-8 md:p-12 relative z-10 flex flex-col h-full">
                 <div className="flex justify-between items-center mb-16">
-                  <img src={logo} alt="" className="w-20" />
+                    <h1 className='text-2xl italic capitalize font-sans'>Safayet<span className='text-[#08d665]'>dev</span></h1>
                   <button
                     className={`w-12 h-12 rounded-full flex items-center justify-center transition-all ${isDark ? 'bg-white/5 hover:bg-white/10' : 'bg-black/5 hover:bg-black/10'}`}
                     onClick={() => setIsOpen(false)}

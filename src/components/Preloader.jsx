@@ -40,9 +40,7 @@ const Preloader = () => {
             ))}
           </div>
           
-          <div className="absolute bottom-20 left-1/2 -translate-x-1/2 text-[10px] font-bold tracking-[0.5em] text-primary uppercase animate-pulse">
-             Loading Excellence
-          </div>
+          
         </motion.div>
       )}
     </AnimatePresence>

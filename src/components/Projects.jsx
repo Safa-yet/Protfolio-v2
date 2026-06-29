@@ -12,11 +12,16 @@ import p6 from "../assets/sundarban.png";
 import p7 from "../assets/qurabni-hat-mockup.png";
 // p7 ebong p8 import korte bhulben na jodi thake
 // import p7 from "../assets/keenkeeper.png"; 
-// import p8 from "../assets/github-tracker.png";
+import p8 from "../assets/img/webimg/Cookly_1x_shots_so.png";
+import p9 from '../assets/img/webimg/petbond_1x_shots_so.png'
+import p10 from '../assets/img/webimg/Tournest_1x_shots_so.png'
 
 const Projects = ({ isDark }) => {
   // Apnar dewa correct links shoho project list
   const projects = [
+    { title: 'Cookly', category: 'Full Stack Recipe Sharing Platform', img: p8, link: "https://cookly-client.vercel.app/", tags: ["Next.js","Express.js","Node.js","JWt","Stipe", "Tailwind"] },
+    { title: 'Pet Bond', category: 'Full Stack Pet Adoptation Platform', img: p9, link: "https://pet-bond-indol.vercel.app/", tags: ["Next.js","Express.js","Node.js","JWt", "Tailwind"] },
+    { title: 'Tour-Nest', category: 'MERN Stack Travel & Tour Website', img: p10, link: "https://tour-nest-nu.vercel.app/", tags: ["Next.js","Express.js","Node.js","JWt", "Tailwind"] },
     { title: 'Qurbanir Haat', category: 'Online Cow Marketplace', img: p7, link: "https://qurbanir-hat.vercel.app/", tags: ["Next.js", "Tailwind"] },
     { title: 'Fresh Heat Restaurent', category: 'Restaurent Webpage', img: p2, link: "https://fresh-heat-restaurent.vercel.app/", tags: ["Next.js", "Tailwind"] },
     { title: 'Emmar Estae Liited', category: 'Construction Company', img: p3, link: "https://emmer-estate-limited.vercel.app/", tags: ["Modern UI", "Vercel"] },

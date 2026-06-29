@@ -19,7 +19,7 @@ const Footer = ({ isDark, links }) => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
           <div className="md:col-span-2">
-            <img src={logo} alt="Logo" className="w-12 h-12 mb-10" />
+             <h1 className='text-2xl italic capitalize font-sans'>Safayet<span className='text-[#08d665]'>dev</span></h1>
             <h2 className={`text-4xl font-black uppercase mb-8 leading-tight ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>Building Digital <br /><span className="text-primary italic">Excellence</span></h2>
             <p className={`${isDark ? 'text-gray-500' : 'text-gray-600'} text-lg max-w-sm mb-10`}>Specializing in creating high-performance, pixel-perfect web applications that drive business growth.</p>
             <div className="flex gap-6">

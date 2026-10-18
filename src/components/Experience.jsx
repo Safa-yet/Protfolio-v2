@@ -17,6 +17,7 @@ const Experience = ({ isDark }) => {
 
   const experiences = [
     // { year: '2021 - Present', title: 'Senior Web Developer', company: 'Digital Solutions Inc.', desc: 'Leading a team of developers to build high-performance web applications using React and Next.js.', icon: <Briefcase size={20} /> },
+    { year: 'May 2025 -Present', title: 'Full Stack Developer', company: 'R2A Information Technology', desc: 'Leading a team of developers to build high-performance web applications using React and Next.js ', icon: <Briefcase size={20} /> },
     { year: 'Aug 2025 -March 2026', title: 'Front End Developer', company: 'Rupsha It Park', desc: 'Developed and maintained web applications with React, Next.js, TailwindCss, JavaScript', icon: <Briefcase size={20} /> },
     { year: '2023 - Present ', title: 'BSc in Computer Science And Engineering', company: 'Fareast International University', desc: 'Studing my degree with a focus on web technologies and software engineering.', icon: <GraduationCap size={20} /> },
     { year: '2019 - 2021', title: 'Higher Secondary Certificate', company: 'Dhaka Imperial College', desc: 'Science', icon: <GraduationCap size={20} /> }

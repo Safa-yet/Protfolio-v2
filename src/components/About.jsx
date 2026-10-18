@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import aboutImg from "../assets/Gemini_Generated_Image_4zp41q4zp41q4zp4.png";
 import { Download, User, Coffee, Award, Star } from "lucide-react";
-import resume from "/public/MD_Safayet_Ul_Islam_FullStack_Resume.pdf";
+import resume from "/public/MD Safayet Ul Islam_Full Stack Developer.pdf";
 
 const About = ({ isDark }) => {
   const stats = [

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import heroImg from '../assets/img/Gemini_Generated_2-removebg-preview-removebg-preview.png';
 
-import resume from "/public/MD_Safayet_Ul_Islam_FullStack_Resume.pdf"
+import resume from "/public/MD Safayet Ul Islam_Full Stack Developer.pdf"
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = ({ isDark }) => {

@@ -28,27 +28,27 @@ const Hero = ({ isDark }) => {
 >
   <TypeAnimation
     sequence={[
-      'Frontend Developer',
+      'Full Stack Developer',
       2000,
       '',
       500,
 
-      'React Developer',
+      'React & Next.js Developer',
       2000,
       '',
       500,
 
-      'Next.js Developer',
+      'Node.js Backend Developer',
       2000,
       '',
       500,
 
-      'MERN Stack Developer',
+      'REST API Engineer',
       2000,
       '',
       500,
 
-      'UI Focused Developer',
+      'PostgreSQL & MongoDB Dev',
       2000,
       '',
       500,
@@ -61,8 +61,8 @@ const Hero = ({ isDark }) => {
 </h2>
             <div className="relative mb-10 group">
                 <p className={`text-lg border-l-4 border-primary pl-8 max-w-xl italic leading-relaxed py-2 backdrop-blur-md rounded-r-lg ${isDark ? 'text-white/80 bg-black/40' : 'text-gray-700 bg-black/5'}`}>
-                  Crafting high-performance web applications with React & Next.js.
-Focused on clean design and seamless user experience.
+                  Building scalable web apps with React, Next.js & Node.js.
+Delivering production-ready solutions with clean APIs & secure auth.
                 </p>
                 <div className="absolute -left-1 top-0 w-1 h-full bg-primary" />
             </div>

@@ -16,11 +16,10 @@ const Experience = ({ isDark }) => {
   });
 
   const experiences = [
-    // { year: '2021 - Present', title: 'Senior Web Developer', company: 'Digital Solutions Inc.', desc: 'Leading a team of developers to build high-performance web applications using React and Next.js.', icon: <Briefcase size={20} /> },
-    { year: 'May 2025 -Present', title: 'Full Stack Developer', company: 'R2A Information Technology', desc: 'Leading a team of developers to build high-performance web applications using React and Next.js ', icon: <Briefcase size={20} /> },
-    { year: 'Aug 2025 -March 2026', title: 'Front End Developer', company: 'Rupsha It Park', desc: 'Developed and maintained web applications with React, Next.js, TailwindCss, JavaScript', icon: <Briefcase size={20} /> },
-    { year: '2023 - Present ', title: 'BSc in Computer Science And Engineering', company: 'Fareast International University', desc: 'Studing my degree with a focus on web technologies and software engineering.', icon: <GraduationCap size={20} /> },
-    { year: '2019 - 2021', title: 'Higher Secondary Certificate', company: 'Dhaka Imperial College', desc: 'Science', icon: <GraduationCap size={20} /> }
+    { year: 'May 2026 – Present', title: 'Full Stack Developer', company: 'R2A Information Technology', desc: 'Developing scalable web applications and RESTful APIs using Next.js, React.js, Node.js, Express.js, PostgreSQL, Prisma, and MongoDB. Implementing authentication, authorization, database management, third-party API, and payment gateway integrations.', icon: <Briefcase size={20} /> },
+    { year: 'Aug 2025 – March 2026', title: 'Frontend Developer', company: 'Rupsha It Park', desc: 'Developed and maintained web applications with React, Next.js, Tailwind CSS, and JavaScript. Built responsive UIs and collaborated closely with design and backend teams.', icon: <Briefcase size={20} /> },
+    { year: '2023 – Expected 2027', title: 'B.Sc. in Computer Science & Engineering', company: 'Fareast International University', desc: 'Studying degree with a focus on web technologies, software engineering, algorithms, and modern computing principles.', icon: <GraduationCap size={20} /> },
+    { year: '2019 – 2021', title: 'Higher Secondary Certificate', company: 'Dhaka Imperial College', desc: 'Science stream — strong foundation in mathematics, physics, and logic.', icon: <GraduationCap size={20} /> }
   ];
 
   return (

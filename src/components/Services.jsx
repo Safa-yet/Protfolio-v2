@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Rocket, Search, Smartphone, Layers, Zap } from 'lucide-react';
+import { Rocket, Database, Shield, Layers, Server, Cloud } from 'lucide-react';
 
 const Services = ({ isDark }) => {
   const services = [
-    { title: 'Frontend Development', desc: 'Crafting responsive, high-performance web applications using modern frameworks.', icon: <Layers size={32} />, gradient: 'from-blue-500 to-cyan-500' },
-    { title: 'Creative UI Design', desc: 'Designing visually stunning interfaces that engage users and brand identity.', icon: <Zap size={32} />, gradient: 'from-purple-500 to-pink-500' },
-    { title: 'Mobile Optimization', desc: 'Ensuring your digital presence is flawless across all mobile devices.', icon: <Smartphone size={32} />, gradient: 'from-orange-500 to-red-500' },
-    { title: 'SEO Strategy', desc: 'Optimizing your web applications for maximum search engine visibility.', icon: <Search size={32} />, gradient: 'from-green-500 to-emerald-500' }
+    { title: 'Full Stack Development', desc: 'Building production-ready web applications with React, Next.js, Node.js, Express.js, and PostgreSQL/MongoDB — from UI to database.', icon: <Layers size={32} />, gradient: 'from-blue-500 to-cyan-500' },
+    { title: 'REST API & Backend', desc: 'Designing and developing scalable RESTful APIs with Node.js, Express.js, Prisma ORM, and relational/non-relational databases.', icon: <Server size={32} />, gradient: 'from-purple-500 to-pink-500' },
+    { title: 'Auth & Security', desc: 'Implementing secure authentication with JWT, Better Auth, OAuth, and Role-Based Access Control (RBAC) for multi-role applications.', icon: <Shield size={32} />, gradient: 'from-orange-500 to-red-500' },
+    { title: 'Cloud & Deployment', desc: 'Deploying and managing production environments on AWS EC2, Nginx, and Vercel with environment configuration and troubleshooting.', icon: <Cloud size={32} />, gradient: 'from-green-500 to-emerald-500' }
   ];
 
   return (
@@ -20,9 +20,9 @@ const Services = ({ isDark }) => {
         <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
           <div className="max-w-2xl">
             <span className="text-primary font-bold uppercase tracking-[0.4em] text-xs mb-4 block">My Services</span>
-            <h1 className={`text-5xl md:text-8xl font-black leading-none uppercase ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>High Impact <br /><span className="text-gray-400 underline decoration-primary/30">Solutions</span></h1>
+            <h1 className={`text-5xl md:text-8xl font-black leading-none uppercase ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>Full Stack <br /><span className="text-gray-400 underline decoration-primary/30">Engineering</span></h1>
           </div>
-          <p className={`${isDark ? 'text-gray-500' : 'text-gray-600'} text-lg max-w-sm mb-4 border-l-2 border-primary pl-6 italic`}>I help businesses grow by creating stunning digital experiences.</p>
+          <p className={`${isDark ? 'text-gray-500' : 'text-gray-600'} text-lg max-w-sm mb-4 border-l-2 border-primary pl-6 italic`}>From pixel-perfect UIs to scalable backends and cloud deployments — I ship complete solutions.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -13,10 +13,10 @@ const About = ({ isDark }) => {
     },
     {
       label: "Projects",
-      value: "70+",
+      value: "50+",
       icon: <Star className="text-primary" />,
     },
-    { label: "Clients", value: "15+", icon: <User className="text-primary" /> },
+    { label: "Production Apps", value: "5+", icon: <User className="text-primary" /> },
     {
       label: "Coffee",
       value: "1k+",
@@ -54,7 +54,7 @@ const About = ({ isDark }) => {
                 02+
               </h2>
               <p className="text-[10px] uppercase font-bold tracking-[0.3em] text-black opacity-60">
-                Years of <br /> Excellence
+                Years of <br /> Experience
               </p>
             </div>
           </motion.div>
@@ -84,13 +84,7 @@ const About = ({ isDark }) => {
               <p
                 className={`${isDark ? "text-gray-400" : "text-gray-600"} text-lg leading-relaxed`}
               >
-                I'm a Full Stack Developer specializing in React.js, Next.js,
-                TypeScript, Node.js, Express.js, MongoDB, and Tailwind CSS. I
-                build responsive, scalable, and high-performance web
-                applications with clean architecture, secure authentication,
-                REST API integration, and modern development practices. I enjoy
-                turning ideas into complete digital products while continuously
-                learning and improving my skills.
+                Full Stack Developer with commercial experience building production web applications using React, Next.js, Node.js, and PostgreSQL. I develop REST APIs, manage relational data with Prisma, implement authentication & authorization, integrate third-party services including payment gateways (Stripe, BenefitPay, Apple Pay), and manage AWS EC2 deployments. I focus on maintainable code, reliable application functionality, and translating business requirements into practical software solutions.
               </p>
             </div>
 

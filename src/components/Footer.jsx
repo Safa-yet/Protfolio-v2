@@ -20,13 +20,12 @@ const Footer = ({ isDark, links }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
           <div className="md:col-span-2">
              <h1 className='text-2xl italic capitalize font-sans'>Safayet<span className='text-[#08d665]'>dev</span></h1>
-            <h2 className={`text-4xl font-black uppercase mb-8 leading-tight ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>Building Digital <br /><span className="text-primary italic">Excellence</span></h2>
-            <p className={`${isDark ? 'text-gray-500' : 'text-gray-600'} text-lg max-w-sm mb-10`}>Specializing in creating high-performance, pixel-perfect web applications that drive business growth.</p>
+            <h2 className={`text-4xl font-black uppercase mb-8 leading-tight ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>Full Stack <br /><span className="text-primary italic">Engineering</span></h2>
+            <p className={`${isDark ? 'text-gray-500' : 'text-gray-600'} text-lg max-w-sm mb-10`}>Building production-ready web applications with React, Next.js, Node.js, PostgreSQL, and AWS — from idea to deployment.</p>
             <div className="flex gap-6">
-              <a href={links.facebook} className={`w-12 h-12 rounded-full border flex items-center justify-center hover:bg-primary hover:text-black transition-all ${isDark ? 'border-white/10 text-white' : 'border-black/5 text-black bg-white shadow-sm'}`}><Facebook size={18} /></a>
-              <a href={links?.twitter}  className={`w-12 h-12 rounded-full border flex items-center justify-center hover:bg-primary hover:text-black transition-all ${isDark ? 'border-white/10 text-white' : 'border-black/5 text-black bg-white shadow-sm'}`}><Linkedin size={18} /></a>
-              <a href={links.linkedin} className={`w-12 h-12 rounded-full border flex items-center justify-center hover:bg-primary hover:text-black transition-all ${isDark ? 'border-white/10 text-white' : 'border-black/5 text-black bg-white shadow-sm'}`}><Linkedin size={18} /></a>
-              <a href={links.github} className={`w-12 h-12 rounded-full border flex items-center justify-center hover:bg-primary hover:text-black transition-all ${isDark ? 'border-white/10 text-white' : 'border-black/5 text-black bg-white shadow-sm'}`}><Github size={18} /></a>
+              <a href={links.facebook} target="_blank" rel="noopener noreferrer" className={`w-12 h-12 rounded-full border flex items-center justify-center hover:bg-primary hover:text-black transition-all ${isDark ? 'border-white/10 text-white' : 'border-black/5 text-black bg-white shadow-sm'}`}><Facebook size={18} /></a>
+              <a href={links.linkedin} target="_blank" rel="noopener noreferrer" className={`w-12 h-12 rounded-full border flex items-center justify-center hover:bg-primary hover:text-black transition-all ${isDark ? 'border-white/10 text-white' : 'border-black/5 text-black bg-white shadow-sm'}`}><Linkedin size={18} /></a>
+              <a href={links.github} target="_blank" rel="noopener noreferrer" className={`w-12 h-12 rounded-full border flex items-center justify-center hover:bg-primary hover:text-black transition-all ${isDark ? 'border-white/10 text-white' : 'border-black/5 text-black bg-white shadow-sm'}`}><Github size={18} /></a>
             </div>
           </div>
 

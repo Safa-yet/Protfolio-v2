@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Mail, Send } from 'lucide-react';
+import { MapPin, Mail, Phone, Send } from 'lucide-react';
 import mapBg from '../assets/img/map.png';
 
 const Contact = ({ isDark }) => {
@@ -17,7 +17,7 @@ const Contact = ({ isDark }) => {
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }}>
             <h2 className="text-primary font-bold tracking-widest uppercase mb-4">Connect</h2>
             <h1 className={`text-5xl lg:text-7xl font-black mb-10 uppercase leading-none ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>Let's Work <br /> <span className="text-gray-400 underline decoration-primary/50">Together</span></h1>
-            <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} text-lg mb-12 max-w-md`}>Have a project in mind? Drop me a message and I'll get back to you as soon as possible.</p>
+            <p className={`${isDark ? 'text-gray-400' : 'text-gray-600'} text-lg mb-12 max-w-md`}>Have a project in mind or looking to hire a Full Stack Developer? Drop me a message — I'll get back to you shortly.</p>
             <div className="space-y-8">
               <div className="flex items-center gap-6 group">
                 <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${isDark ? 'bg-white/5 text-primary shadow-inner' : 'bg-white text-primary border border-[#f0ecd8] shadow-md'} group-hover:bg-primary group-hover:text-black transition-all`}>
@@ -26,6 +26,15 @@ const Contact = ({ isDark }) => {
                 <div>
                   <h4 className="font-bold text-gray-400 uppercase text-xs tracking-widest">Email</h4>
                   <p className={`text-xl font-black ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>mdsafayet315@gmail.com</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-6 group">
+                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${isDark ? 'bg-white/5 text-primary shadow-inner' : 'bg-white text-primary border border-[#f0ecd8] shadow-md'} group-hover:bg-primary group-hover:text-black transition-all`}>
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-400 uppercase text-xs tracking-widest">Phone</h4>
+                  <p className={`text-xl font-black ${isDark ? 'text-white' : 'text-[#3d3d3d]'}`}>+880 1612 554864</p>
                 </div>
               </div>
               <div className="flex items-center gap-6 group">

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, ArrowUpRight, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 
-// Assets imports (Apnar assets path thik rakhun)
 import p1 from "../assets/payo.png";
 import p2 from "../assets/freshHeat.png";
 import p3 from "../assets/bricknet_thumnail.png";
@@ -10,32 +9,109 @@ import p4 from "../assets/app.png";
 import p5 from "../assets/english-janala.png";
 import p6 from "../assets/sundarban.png";
 import p7 from "../assets/qurabni-hat-mockup.png";
-// p7 ebong p8 import korte bhulben na jodi thake
-// import p7 from "../assets/keenkeeper.png"; 
 import p8 from "../assets/img/webimg/Cookly_1x_shots_so.png";
-import p9 from '../assets/img/webimg/petbond_1x_shots_so.png'
-import p10 from '../assets/img/webimg/Tournest_1x_shots_so.png'
+import p9 from '../assets/img/webimg/petbond_1x_shots_so.png';
+import p10 from '../assets/img/webimg/Tournest_1x_shots_so.png';
+import p11 from '../assets/yjeek589_1x_shots_so.png';
+import p12 from '../assets/Bajatzu.jpeg';
 
 const Projects = ({ isDark }) => {
-  // Apnar dewa correct links shoho project list
   const projects = [
-    { title: 'Cookly', category: 'Full Stack Recipe Sharing Platform', img: p8, link: "https://cookly-client.vercel.app/", tags: ["Next.js","Express.js","Node.js","JWt","Stipe", "Tailwind"] },
-    { title: 'Pet Bond', category: 'Full Stack Pet Adoptation Platform', img: p9, link: "https://pet-bond-indol.vercel.app/", tags: ["Next.js","Express.js","Node.js","JWt", "Tailwind"] },
-    { title: 'Tour-Nest', category: 'MERN Stack Travel & Tour Website', img: p10, link: "https://tour-nest-nu.vercel.app/", tags: ["Next.js","Express.js","Node.js","JWt", "Tailwind"] },
-    { title: 'Qurbanir Haat', category: 'Online Cow Marketplace', img: p7, link: "https://qurbanir-hat.vercel.app/", tags: ["Next.js", "Tailwind"] },
-    { title: 'Fresh Heat Restaurent', category: 'Restaurent Webpage', img: p2, link: "https://fresh-heat-restaurent.vercel.app/", tags: ["Next.js", "Tailwind"] },
-    { title: 'Emmar Estae Liited', category: 'Construction Company', img: p3, link: "https://emmer-estate-limited.vercel.app/", tags: ["Modern UI", "Vercel"] },
-    { title: 'Turbo App', category: 'Web App ', img: p4, link: "https://app-store-react-router.vercel.app/", tags: ["React", "Router"] },
-    { title: 'English Janala', category: 'Dictonary', img: p5, link: "https://english-janala-five.vercel.app/", tags: ["Logic", "API"] },
-    { title: 'Sundarban Travel Agency', category: 'Entertainment', img: p6, link: "https://sundarban-travels-tour.vercel.app/", tags: ["Tourism", "Framer"] },
-    { title: 'Keenkepper', category: 'Social Media', img: p6, link: "https://kin-keeper-a7.vercel.app/", tags: ["Social", "UI/UX"] }, // p7 thakle p7 diben
-    { title: 'Github Issue Tracker', category: 'Tracking', img: p6, link: "https://github-issue-tracker-nine.vercel.app/", tags: ["Tool", "Github API"] }, // p8 thakle p8 diben
-    { title: 'Payo Mobile Bank', category: 'Mobile App', img: p1, link: 'https://payoo-mobile-bank-app.vercel.app/', tags: ["React Native", "Fintech"] },
+    {
+      title: 'YJEEK',
+      category: 'Multi-Service On-Demand Platform',
+      img: p11,
+      link: "https://portal.yjeektech.com/",
+      github: "",
+      tags: ["Node.js", "PostgreSQL", "Prisma", "AWS EC2", "Firebase", "RBAC"],
+      featured: true,
+    },
+    {
+      title: 'Batjazu',
+      category: 'Restaurant Management System',
+      img: p12,
+      link: "https://bajatzu.be/",
+      github: "",
+      tags: ["Node.js", "PostgreSQL", "Prisma", "AWS EC2", "Firebase", "RBAC"],
+      featured: true,
+    },
+    {
+      title: 'Cookly',
+      category: 'Full Stack Recipe Sharing Platform',
+      img: p8,
+      link: "https://cookly-client.vercel.app/",
+      github: "https://github.com/Safa-yet",
+      tags: ["Next.js", "Express.js", "MongoDB", "Stripe", "Better Auth"],
+    },
+    {
+      title: 'Pet Bond',
+      category: 'Full Stack Pet Adoption Platform',
+      img: p9,
+      link: "https://pet-bond-indol.vercel.app/",
+      github: "",
+      tags: ["Next.js", "Express.js", "Node.js", "JWT", "Tailwind"],
+    },
+    {
+      title: 'Tour-Nest',
+      category: 'MERN Stack Travel & Tour Website',
+      img: p10,
+      link: "https://tour-nest-nu.vercel.app/",
+      github: "",
+      tags: ["Next.js", "Express.js", "Node.js", "JWT", "Tailwind"],
+    },
+    {
+      title: 'Qurbanir Haat',
+      category: 'Online Cow Marketplace',
+      img: p7,
+      link: "https://qurbanir-hat.vercel.app/",
+      github: "",
+      tags: ["Next.js", "Tailwind"],
+    },
+    {
+      title: 'Fresh Heat Restaurant',
+      category: 'Restaurant Webpage',
+      img: p2,
+      link: "https://fresh-heat-restaurent.vercel.app/",
+      github: "",
+      tags: ["Next.js", "Tailwind"],
+    },
+    {
+      title: 'Emmar Estate Limited',
+      category: 'Construction Company Website',
+      img: p3,
+      link: "https://emmer-estate-limited.vercel.app/",
+      github: "",
+      tags: ["Modern UI", "Vercel"],
+    },
+    {
+      title: 'Turbo App',
+      category: 'React Web Application',
+      img: p4,
+      link: "https://app-store-react-router.vercel.app/",
+      github: "",
+      tags: ["React", "Router"],
+    },
+    {
+      title: 'English Janala',
+      category: 'Dictionary App',
+      img: p5,
+      link: "https://english-janala-five.vercel.app/",
+      github: "",
+      tags: ["Logic", "API"],
+    },
+    {
+      title: 'Payo Mobile Bank',
+      category: 'Mobile Banking UI',
+      img: p1,
+      link: 'https://payoo-mobile-bank-app.vercel.app/',
+      github: "",
+      tags: ["React", "Fintech"],
+    },
   ];
 
   // --- Pagination Logic ---
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 4; 
+  const projectsPerPage = 4;
 
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
@@ -49,12 +125,12 @@ const Projects = ({ isDark }) => {
 
   return (
     <section id="projects" className={`${isDark ? 'bg-black text-white' : 'bg-white text-black'} py-24 px-6 relative`}>
-      
+
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-20">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div className="space-y-2">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               className="flex items-center gap-2 text-primary font-mono text-sm uppercase tracking-widest"
@@ -90,15 +166,26 @@ const Projects = ({ isDark }) => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 />
-                
-                <div className="absolute top-6 left-6 px-4 py-2 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-white">
-                    {project.category}
-                  </span>
+
+                {/* Badges */}
+                <div className="absolute top-6 left-6 flex gap-2 flex-wrap">
+                  <div className="px-4 py-2 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-white">
+                      {project.category}
+                    </span>
+                  </div>
+                  {project.featured && (
+                    <div className="px-4 py-2 bg-primary/90 backdrop-blur-xl rounded-full">
+                      <span className="text-[10px] font-black uppercase tracking-widest text-black">
+                        Commercial
+                      </span>
+                    </div>
+                  )}
                 </div>
 
+                {/* Hover overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20 backdrop-blur-[2px]">
-                  <a 
+                  <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -114,7 +201,7 @@ const Projects = ({ isDark }) => {
                   <h3 className="text-3xl font-bold tracking-tight mb-3 uppercase italic font-serif">
                     {project.title}
                   </h3>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 flex-wrap">
                     {project.tags.map((tag, i) => (
                       <span key={i} className={`text-[10px] px-3 py-1 border rounded-full ${isDark ? 'border-white/10 text-gray-400' : 'border-black/5 text-gray-500'}`}>
                         {tag}
@@ -124,9 +211,11 @@ const Projects = ({ isDark }) => {
                 </div>
 
                 <div className="flex gap-3">
-                  <a href="#" className={`p-3 rounded-full border transition-all ${isDark ? 'border-white/10 hover:bg-white hover:text-black' : 'border-black/10 hover:bg-black hover:text-white'}`}>
-                    <Github size={18} />
-                  </a>
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className={`p-3 rounded-full border transition-all ${isDark ? 'border-white/10 hover:bg-white hover:text-black' : 'border-black/10 hover:bg-black hover:text-white'}`}>
+                      <Github size={18} />
+                    </a>
+                  )}
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className={`p-3 rounded-full border transition-all ${isDark ? 'border-white/10 hover:bg-white hover:text-black' : 'border-black/10 hover:bg-black hover:text-white'}`}>
                     <ExternalLink size={18} />
                   </a>
@@ -152,11 +241,10 @@ const Projects = ({ isDark }) => {
             <button
               key={i}
               onClick={() => paginate(i + 1)}
-              className={`w-12 h-12 rounded-full font-mono text-sm transition-all border flex items-center justify-center ${
-                currentPage === i + 1 
-                  ? 'bg-primary border-primary text-black font-bold scale-110' 
-                  : (isDark ? 'border-white/10 text-white hover:bg-white/5' : 'border-black/10 text-black hover:bg-black/5')
-              }`}
+              className={`w-12 h-12 rounded-full font-mono text-sm transition-all border flex items-center justify-center ${currentPage === i + 1
+                ? 'bg-primary border-primary text-black font-bold scale-110'
+                : (isDark ? 'border-white/10 text-white hover:bg-white/5' : 'border-black/10 text-black hover:bg-black/5')
+                }`}
             >
               0{i + 1}
             </button>

@@ -27,7 +27,7 @@ const Projects = ({ isDark }) => {
       featured: true,
     },
     {
-      title: 'Batjazu',
+      title: 'Bajatzu',
       category: 'Restaurant Management System',
       img: p12,
       link: "https://bajatzu.be/",

@@ -23,6 +23,7 @@ const Experience = ({ isDark }) => {
   ];
 
   return (
+    // Experience
     <section id="experience" ref={containerRef} className={`py-24 relative overflow-hidden transition-colors duration-700 ${isDark ? 'bg-black' : 'bg-[#fdfbf6]'}`}>
       <div className="container mx-auto px-6 relative z-10">
         <div className="mb-20 text-center">
